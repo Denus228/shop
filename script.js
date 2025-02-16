@@ -43,3 +43,7 @@ function toggleCart() {
   const cartSection = document.getElementById('cart');
   cartSection.style.display = cartSection.style.display === 'none' ? 'block' : 'none';
 }
+function toggleCart() {
+  const cartSection = document.getElementById('cart');
+  cartSection.style.display = cartSection.style.display === 'none' ? 'block' : 'none';
+}
