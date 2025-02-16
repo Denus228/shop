@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <link rel="stylesheet" href="css/style.css">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин</title>
-    <link rel="stylesheet" href="styles./css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин продуктів та випічки</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#products">Товари</a></li>
-                <li><a href="#reviews">Відгуки</a></li>
-                <li><a href="#contacts">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h1>Магазин</h1>
-            <p>Ми пропонуємо широкий вибір свіжих продуктів...</p>
-        </section>
-        
-        <section id="products">
-            <h2>Товари</h2>
-            <div class="product">
-                <img src="data:image/jpeg;base64,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" alt="Яблука">
-                <p>Яблука</p>
-                <p>Ціна: 100 грн</p>
-            </div>
-            <div class="product">
-                <img src="data:image/jpeg;base64,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" alt="Груші">
-                <p>Груші</p>
-                <p>Ціна: 120 грн</p>
-            </div>
-            <div class="product">
-                <img src="data:image/webp;base64,UklGRmIFAABXRUJQVlA4IFYFAADwIwCdASq3ANEAPoFAmkmlJCWhJrfJMLAQCWNu4W/Q9I+7/vyvPHvL+w4hdHUNnxONCK6P/HmTzUgx/qSf9Pgi7u7u60i3BqBk+ZmZmZgT3pITQpZn7u7u6qYzc4F4iZmZmZPW4u7O4HRDu7u7u4xTrQjdu5rd3d3dj02vmLVO1ZOjahGZmZmfTgZQ1xgd0joiIiIJN3WB0sHDaoYUUELCXCnI8JgUM1w+KfNPzxP1d12mmJAtxYOA823AAleezCJ78meRefI8u7j1x4f+heWfbzXqDSYzeeL1BvvHYTVo6ePnXLzHGCvNy8zrnMXOva87qUopL8qd6R9zKaqUKOFAs/LL2s0riut6HI6tr4M0rRf5gRyeizMp+797VH+xpov2qYi+Mm4QAAD+6vIiV78F+w3k9GFNDDGEq9En2S31Slf+nvA/bOJykkk+2D8/5hQFq8bcsHvSfJ82BL9M1UJzpHBtfYyGfKSiKL5eF9mkCy4K4qjYTk6lVU7UHsqHqwlyNVeiDL7wyAeMd/Lvnk5P2WRu5uNHjjiaMg5jQAxvLmBDfJGc11SEPRmzOPlfK47SoP4zsfRgbs+UoLK70smATgMmQmn/zM8N6sqRApd4gOAEbhUtZ6nd02nIoFZX5CX/eMvtSrwESf1YD6UWbbf7kQPPd0wRHi4rgGAf0pCf5Rvp5BcMuLbbvFPe2eIecFYQLUKxAQKU0+tPob48d0r/x7wie2P5tVnSRC/z4Zl4g7ccNIW4cIFMf483R098ff0symlmI6/gbkecGS75LwXOUJlAAPJCGM9AlGnAabIlvxvH4OkuGxLVPyrcok+pD0EJeT/px+ak7VfERd5niCWrEEBfrxtQHgV1iRLyrQWqJjcku254Bp6iVw1+8/4PCczHhiFJ6VR4COmA9Eu16BCmk0hlzAm037qFWj6VIg64XCEJcvpuZ9QYE4aelha+cA0w8nI9QoNpsBW+dIv3PtpPbYqqpOe2powUuCHZPXpGmjuobhA5aPQJzyJpabkwLpn3kWRHbLjmvZVSSgk1D82LLSQAFqz7vluVNEiYeJj7s0+Tci3e+nwZSoplseukSe+c9WeSXpcITSCykcfEpN0IO4rgLQgzw2tVZTVRkJR3nerR4BKyiaVlCW8gjCffAoZp8ECfP07nJWItjdzcUj7PKirqXNsFa2aH8BKZFyF/rw4IeAOtHwypcCQT8NNuqpKwGAHGTI5GbVrQRlCKd/WhCoTBA269LLW16x8RV3+mzpPGXhR3ckw8cHtiiEtxO/ZHc7KWqxAKYh8jmp2V+ncAfO6OLUqBJSUfa5FAw1aKsJ8QFlBrOaxeHvupwVw70TnBGbgEsuz1/ONSEfd4HQQezJcWyRUuKPBlxW+Ny1gKY+09LN68Uko2M60CVLHq1JOGQ6/E1KAqsBZZVa7nl6JRJ1KjaE/zuE+Fvg4f3jBkTqlwhb9clTwxAZRlPH7IpOTYBMODp3+ixyEIh+20FV75O8oEO+fJ4hlax95abVbAVUS2M/cNMIXSCdUXxFRyQHP4wyM/OOyZJNi2w/lcCrsagQzMSSXYTejhGIw6PNiQnwZJM7VfUd9o90qJG0rOZ2JJW31/vrshNbRX2MWv7XHcwY9IXXZxx5fEO54ADEUAH/Vf5NgnP+UUG3wn/PzVVKIXjl2Msnk9+BRjqwmXj71/p8HvMgRAZQukyG0x7kwyipdBUePnt0TUb0s3n/rv/jlAuinDt9NQrGEAAwZcFdhDupVt0/THX5/qUw9FWwkhg4p0PpveoGv+MtLEqkwrUfTHyssK2cMwvWK9jjhQYgCgVX+AoAAA" alt="Банан">
-                <p>Банан</p>
-                <p>Ціна: 80 грн</p>
-            </div>
-        </section>
-        
-        <section id="reviews">
-            <h2>Відгуки</h2>
-            <p>Наші клієнти задоволені...</p>
-        </section>
-        
-        <section id="contacts">
-            <h2>Адреса</h2>
-            <p>Київ, вул. Михайлівська, 10</p>
-            <p>Львів, вул. Садова, 14</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Контакти: +380 123 456 789</p>
-    </footer>
+  <header>Ласкаво просимо до нашого магазину продуктів та випічки!</header>
+  <nav>
+    <a href="#products">Продукти</a>
+    <a href="#bakery">Випічка</a>
+    <a href="#cart">Кошик</a>
+    <a href="#info">Інформація</a>
+    <a href="#reviews">Відгуки</a>
+  </nav>
+  
+  <div class="cart-container" onclick="toggleCart()">
+    <img class="cart-icon" src="cart-icon.jpg" alt="Кошик">
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <section id="products" class="catalog">
+    <div class="card"><h3>Яблука</h3><p>Ціна: 30 грн</p><button onclick="addToCart('Яблука', 30)">Додати</button></div>
+    <div class="card"><h3>Банани</h3><p>Ціна: 40 грн</p><button onclick="addToCart('Банани', 40)">Додати</button></div>
+    <div class="card"><h3>Помідори</h3><p>Ціна: 25 грн</p><button onclick="addToCart('Помідори', 25)">Додати</button></div>
+  </section>
+  
+  <section id="cart" class="cart" style="display:none;">
+    <h2>Ваш кошик</h2>
+    <div id="cart-items"></div>
+    <p>Загальна сума: <span id="total">0</span> грн</p>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Інформація</h2>
+    <p>Наш магазин пропонує широкий вибір свіжих продуктів та випічки. Ми гарантуємо якість та доступні ціни.</p>
+  </section>
+  
+  <section id="reviews" class="reviews">
+    <h2>Відгуки</h2>
+    <p>Олексій: Дуже смачні круасани! Рекомендую!</p>
+    <p>Марія: Завжди купую тут фрукти, завжди свіже!</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
 
